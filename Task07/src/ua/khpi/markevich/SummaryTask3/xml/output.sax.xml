@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<knives xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="input.xsd">
+    <knife handy="one-handed" value="false">
+        <model>Condor</model>
+        <type>Hunting</type>
+        <origin>El Salvador</origin>
+        <visuals>
+            <blade>copper</blade>
+            <length>15</length>
+            <width>20</width>
+            <handle>
+                <wood material="hardwood"/>
+            </handle>
+            <bloodsucker>false</bloodsucker>
+        </visuals>
+    </knife>
+    <knife handy="one-handed" value="false">
+        <model>Apache</model>
+        <type>Hike</type>
+        <origin>USA</origin>
+        <visuals>
+            <blade>iron</blade>
+            <length>23</length>
+            <width>12</width>
+            <handle>
+                <steel/>
+            </handle>
+            <bloodsucker>true</bloodsucker>
+        </visuals>
+    </knife>
+    <knife handy="two-handed" value="true">
+        <model>Ktana_ninjia</model>
+        <type>Sword</type>
+        <origin>Japan</origin>
+        <visuals>
+            <blade>steel</blade>
+            <length>57</length>
+            <width>50</width>
+            <handle>
+                <wood material="oak"/>
+            </handle>
+            <bloodsucker>false</bloodsucker>
+        </visuals>
+    </knife>
+    <knife handy="one-handed" value="true">
+        <model>Red Dragon</model>
+        <type>warrior</type>
+        <origin>China</origin>
+        <visuals>
+            <blade>turmaniy</blade>
+            <length>83</length>
+            <width>52</width>
+            <handle>
+                <wood material="redwood"/>
+            </handle>
+            <bloodsucker>true</bloodsucker>
+        </visuals>
+    </knife>
+</knives>

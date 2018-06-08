@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<header><h3>Calculate</h3></header>
+	<aside class="left"></aside>
+	<aside class="right"></aside>
+	<div class="container">
+		<div class="calc">
+			<form action="calc" method="get">
+				<input type="text" name="x" pattern="\d+(\.\d+)?" required>
+				<select name="op" id="op">
+					<option value="%2B">+</option>
+					<option value="-">-</option>
+				</select> <input type="text" name="y" pattern="\d+(\.\d+)?" required>
+				<input type="submit" value="culc">
+			</form>
+		</div>
+	</div>
+	<footer><small>Markevich Arthur</small></footer>
+</body>
+</html>

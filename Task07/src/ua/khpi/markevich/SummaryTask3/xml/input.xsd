@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="knives" type="knives" />
+	<xs:element name="knife" type="knife" />
+
+	<xs:complexType name="knives">
+		<xs:sequence>
+			<xs:element name="knife" type="knife" minOccurs="1"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="knife">
+		<xs:sequence>
+			<xs:element name="model" type="xs:string" />
+			<xs:element name="type" type="xs:string" />
+			<xs:element name="origin" type="xs:string" />
+			<xs:element name="visuals" type="visuals" />
+		</xs:sequence>
+		<xs:attribute name="handy" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="one-handed" />
+					<xs:enumeration value="two-handed" />
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="value" use="required"
+			type="xs:boolean" />
+	</xs:complexType>
+
+	<xs:complexType name="visuals">
+		<xs:sequence>
+		
+			
+						<xs:element name="blade" type="xs:string" />
+
+						<xs:element name="length">
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minExclusive value="10" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+
+						<xs:element name="width">
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minExclusive value="10" />
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					
+			
+			<xs:element name="handle">
+				<xs:complexType>
+					<xs:choice>
+						<xs:element name="steel" />
+						<xs:element name="plastic" />
+						<xs:element name="wood">
+							<xs:complexType>
+								<xs:attribute name="material" use="required" />
+							</xs:complexType>
+						</xs:element>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+
+			<xs:element name="bloodsucker" type="xs:boolean" />
+		</xs:sequence>
+		
+	</xs:complexType>
+
+
+</xs:schema>
